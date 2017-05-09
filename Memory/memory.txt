@@ -1,8 +1,9 @@
-2¡¢¿´ReentrantLockÈçºÎÀûÓÃAQS¿ò¼Ü
-7¡¢ÐÞ¸Ä¼òÀú(¸ß¼¶Êý¾Ý½á¹¹£¬¿´¹ýÔ´ÂëÒ»¶¨ÒªÐ´³öÀ´)
-8¡¢ÍøÂç±à³Ì
-9¡¢firewalld iptable ipwrapper
-10¡¢ThreadPoolÔ´Âë¡¢BlockQueueÔ´Âë
-11¡¢À¹½ØÆ÷ÊµÏÖ(Á´Ê½²Ù×÷)¡¢
-12¡¢×îÐ¡Éú³ÉÊ÷
-13¡¢Ë¹Ì¹ÄÉÊ÷
+2ã€çœ‹ReentrantLockå¦‚ä½•åˆ©ç”¨AQSæ¡†æž¶
+7ã€ä¿®æ”¹ç®€åŽ†(é«˜çº§æ•°æ®ç»“æž„ï¼Œçœ‹è¿‡æºç ä¸€å®šè¦å†™å‡ºæ¥)
+8ã€ç½‘ç»œç¼–ç¨‹
+9ã€firewalld iptable ipwrapper
+10ã€ThreadPoolæºç ã€BlockQueueæºç 
+11ã€æ‹¦æˆªå™¨å®žçŽ°(é“¾å¼æ“ä½œ)ã€
+12ã€æœ€å°ç”Ÿæˆæ ‘
+13ã€æ–¯å¦çº³æ ‘
+14ã€B+æ ‘ä¿®æ”¹(doc)
