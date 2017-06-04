@@ -1,0 +1,164 @@
+["abc", "cba", "hello", "world"] => YES
+["hi", "hello"] => NO
+
+public class Main{
+
+    
+    public static String func(String[] strs){
+        Set<String> set=new HashSet<String>();
+        for(int i=0;i<strs.length;i++){
+            if(!set.add(sorted(strs[i]))) return "YES";
+        }
+        return "NO";
+    }
+    
+    private static String sorted(String s){
+        char[] charAry=s.toCharArray();
+        Arrays.sort(charAry);
+        return new String(charAry);
+    }
+}
+
+n * m
+
+public class Main{
+    public static int func(int[][] matrix){
+        if(matrix==null||matrix.length==0||matrix[0].length==0) return 0;
+        
+        int m=matrix.length;
+        int n=matrix[0].length;
+        
+        int[][] dp=new int[m][n];
+        if(matrix[0][0]==1) return 0;
+        dp[0][0]=1;
+        
+        for(int i=1;i<m;i++){
+            if(matrix[i][0]==1){
+                dp[i][0]=0;
+            }else{
+                dp[i][0]=dp[i-1][0];
+            }
+        }
+        
+        for(int i=1;i<n;i++){
+            if(matrix[0][i]==1){
+                dp[0][i]=0;
+            }else{
+                dp[0][i]=dp[0][i-1];
+            }
+        }
+        
+        for(int i=1;i<m;i++){
+            for(int j=1;j<n;j++){
+                if(matrix[i][j]==1){
+                    dp[i][j]=0;
+                }else{
+                    dp[i][j]=dp[i-1][j]+dp[i][j-1];
+                }
+            }
+        }
+        
+        return dp[m-1][n-1];
+    }
+}
+
+
+
+session cookie的区别
+post和get的区别
+缓存清理的准则有哪些
+
+
+二面：设计一个insert remove getrandom的数据结构
+
+public class Main{
+        private List<Integer> ary=new ArrayList<Integer>();
+        private int len=-1;
+        private Map<Integer,Integer> map=new HashMap<Integer,Integer>();
+        private Random rand=new Random();
+        bool Insert(int val){
+                if (map.containsKey(val)) return false;
+                if(ary.size()<=len+1){
+                    ary.add(val);
+                    len++;
+                    map.put(val,len);
+                } else{
+                    ary.set(++len,val);
+                    map.put(val,len);
+                }
+                return true; 
+        }
+        bool Remove(int val){
+                if(!map.containsKey(val)) return false;
+                int pos=map.get(val);
+                if(pos==len){
+                    len--;
+                    map.remove(val);
+                }else{
+                    int lastVal=ary.get(len);
+                    ary.set(pos,lastVal);
+                    map.put(lastVal,pos);
+                    len--;
+                    map.remove(val);
+                }
+                return true;
+        }
+        int GetRandom(){
+               if(len<0) throw new RuntimeException(); 
+               return ary.get(rand.nextInt(len+1));
+        }
+}
+
+
+
+三面：项目谈了很久，找出block的数量，DFS即可
+1 0 1 1
+1 0 0 0
+1 1 0 1
+
+int CountBlocks(int[][] matrix){
+     if(matrix==null||matrix.length==0||matrix[0].length==0) return 0;
+     int m=matrix.length;
+     int n=matrix[0].length;
+     int res=0;
+     for(int i=0;i<m;i++){
+         for(int j=0;j<n;j++){
+                if(matrix[i][j]==1) {
+                    helper(matrix,i,j);
+                    res++;
+                }
+         }
+     }
+     return res;
+}
+
+
+private void helper(int[][] matrix,int row,int col){
+     int m=matrix.length;
+     int n=matrix[0].length;
+     matrix[row][col]=0;
+     if(row-1>=0&&col-1>=0&&matrix[row-1][col-1]==1){
+         helper(matrix,row-1,col-1);
+     }
+     if(col-1>=0&&matrix[row][col-1]==1){
+         helper(matrix,row,col-1);
+     }
+     if(row+1<m&&col-1>=0&&matrix[row+1][col-1]==1){
+         helper(matrix,row+1,col-1);
+     }
+     if(row-1>=0&&matrix[row-1][col]==1){
+         helper(matrix,row-1,col);
+     }
+     if(row+1<m&&matrix[row+1][col]==1){
+         helper(matrix,row+1,col);
+     }
+     if(row-1>=0&&col+1<n&&matrix[row-1][col+1]==1){
+         helper(matrix,row-1,col+1);
+     }
+     if(col+1<n&&matrix[row][col+1]==1){
+         helper(matrix,row,col+1);
+      }
+     if(row+1<m&&col+1<n&&matrix[row+1][col+1]==1){
+         helper(matrix,row+1,col+1);
+     }
+}
