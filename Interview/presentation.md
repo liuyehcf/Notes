@@ -1,5 +1,14 @@
-无线视频编码方案
 
+
+# 语言方面：
+
+Java、C++基础比较扎实。C++方面的话看过STL源码。Java 看过Spring AOP源码，看过JDK concurrent包下部分源码，包括AQS，ConditionObject，ReentrantLock，ArrayBlockingQueue，ConcurrentHashMap，ThreadPoolExecutor，FutureTask等。对Java虚拟机有一定了解，熟悉Java内存模型
+
+# 数据结构：熟悉常用的基本数据结构，对平衡二叉树有一定的研究，包括AVL数、红黑树、B树、B+树都做过实现
+
+# 项目方面：
+
+## 无线视频编码方案
 
 我研究的视频编码方案针对的是无线广播这一场景
 
@@ -17,7 +26,7 @@
 
 
 
-LTE-V2X车联网仿真平台
+## LTE-V2X车联网仿真平台
 
 在仿真平台模拟街区场景或者高速场景下车辆与车辆之间的通信，统计时延信息以及丢包率等统计数据
 
@@ -36,11 +45,11 @@ LTE-V2X车联网仿真平台
 3. TCP:查找下一跳节点，给路由节点发送sync请求，等待ACK应答。在下一个时钟周期，每个节点将会从sync列表中挑选一个作为来帮助该节点转发消息
 
 
+在C++基础上实现反射，实现一个IoC容器，根据配置文件初始化单例对象，并进行依赖注入
 
 
 
-
-IM聊天软件
+## IM聊天软件
 
 这个项目最初的目的是熟悉Java NIO API。
 
@@ -69,5 +78,8 @@ MessageInterceptor/MessageInvocation
 
 
 Protocol
+
+
+## 尚德机构云外呼平台的开发
 
 
