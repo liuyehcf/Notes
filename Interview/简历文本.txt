@@ -7,11 +7,12 @@
 4. 利用OkHttp网络框架以及FastJson解析框架调用第三方话务厂商API以同步通话流水。
 5. 利用Spring集成的Quartz框架实现定时录音下载功能，并实时统计并发下载速率。
 
-2017.06-至今				Microsoft-O365-High Availability				C# 后台开发
-项目描述：Exchange邮件服务器的状态监控
+2017.06-至今					Microsoft-O365-High Availability			C# 后台开发
+项目描述：Exchange邮件服务器的状态监控。
 承担工作：
-1. 利用PassiveMonitoringSDK，生成日志信息，并上传到Geneva平台
-2. 在Geneva平台上进行日志数据可视化处理
+1. 利用PassiveMonitoringSDK，生成日志信息，并上传到Geneva平台。
+2. 利用Topology Deloyment Service平台进行单元测试。
+3. 在Geneva平台上进行日志数据的汇总分析，以及进行数据的可视化处理。
 
 项目经历
 2017.05-2017.06				IM聊天软件研发								个人项目
@@ -23,7 +24,7 @@
 4. 设计MessageInterceptor与MessageInvocation接口，配合工厂设计模式和JDK动态代理技术，为Message Reader/Writer中间件动态织入增强逻辑。
 5. 设计Connection，用于封装SocketChannel作为连接基本单元；设计PipeLineTask接口及其继承体系，定义客户端/服务端消息处理基本流程，实现多线程负载均衡。
 6. 以Javax Swing为基础设计并实现软件界面。
-7. 客户端支持多账号登录，支持多会话，支持群聊，实现在线人数以及群组实时刷新；服务端支持超时下线功能，正常处理各种异常情况，包括客户端关闭，异常断线等
+7. 客户端支持多账号登录，支持多会话，支持群聊，实现在线人数以及群组实时刷新；服务端支持超时下线功能，正常处理各种异常情况，包括客户端关闭，异常断线等。
 
 2016.05-2017.06				LTE-V2X车联网仿真平台搭建					项目负责人
 项目描述：搭建LTE-V2X车联网仿真平台，为无线资源分配算法以及路由算法提供一致性验证平台。
@@ -38,3 +39,4 @@
 1. 查阅文献资料，用matlab实现了所有经典论文的视频编码方案。
 2. 设计并实现具有高鲁棒性以及高可伸缩性的无线广播视频编码方案AGD-CAST。
 3. 在WCSP 2016(IEEE)发表一篇会议论文——"Adaptive GoP dividing video coding for wireless broadcast based on power allocation optimization"，该论文主要提出了一种新颖的基于功率分配优化的可变分组的视频编码方案，具有较高理论价值。
+
