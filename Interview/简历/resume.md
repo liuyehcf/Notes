@@ -1,17 +1,16 @@
 # 个人信息
 
 <div>
-<img align="right" src="/pic.jpg" height="180px">
-</br>
-<div align="left">
-<text>姓名：贺辰枫</text><br/>
-<text>性别：男</text><br/>
-<text>户籍：杭州</text><br/>
-<text>年龄：29</text><br/>
-<text>联系方式：17366617611（工作时间请勿来电，可以加微信）</text><br/>
-<text>邮箱：1559500551@qq.com</text><br/>
-</div>
-
+    <img align="right" src="/pic.jpg" height="180px">
+    </br>
+    <div align="left">
+        <text>姓名：贺辰枫</text><br/>
+        <text>性别：男</text><br/>
+        <text>户籍：杭州</text><br/>
+        <text>年龄：29</text><br/>
+        <text>联系方式：17366617611（工作时间请勿来电，可以加微信）</text><br/>
+        <text>邮箱：1559500551@qq.com</text><br/>
+    </div>
 </div>
 
 
@@ -60,7 +59,8 @@
 1. 熟悉k8s基本概念、基本操作、网络架构
 1. 熟悉linux常用命令及基本操作
 1. 业余时间实现过的项目
-    1. [paxos协议，https://github.com/liuyehcf/liuyehcf-framework/tree/master/io-athena](https://github.com/liuyehcf/liuyehcf-framework/tree/master/io-athena)
-    1. [rpc框架，https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-maple](https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-maple)
-    1. [http框架，https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-ares](https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-ares)（已在公司内部使用）
-    1. [go版本的logback日志框架，https://github.com/liuyehcf/common-gtools](https://github.com/liuyehcf/common-gtools)（已在公司内部推广使用）
+    1. [编译框架 → https://github.com/liuyehcf/liuyehcf-framework/tree/master/compile-engine](https://github.com/liuyehcf/liuyehcf-framework/tree/master/compile-engine)
+    1. [paxos协议 → https://github.com/liuyehcf/liuyehcf-framework/tree/master/io-athena](https://github.com/liuyehcf/liuyehcf-framework/tree/master/io-athena)
+    1. [rpc框架 → https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-maple](https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-maple)
+    1. [http框架 → https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-ares](https://github.com/liuyehcf/liuyehcf-framework/tree/master/rpc-ares)（已在公司内部使用）
+    1. [go版本的logback日志框架 → https://github.com/liuyehcf/common-gtools](https://github.com/liuyehcf/common-gtools)（已在公司内部推广使用）
