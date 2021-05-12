@@ -1,7 +1,7 @@
 # 个人信息
 
 <div>
-    <img align="right" src="/pic.jpg" height="180px">
+    <img align="right" src="pic.jpg" height="180px">
     </br>
     <div align="left">
         <text>姓名：贺辰枫</text><br/>
